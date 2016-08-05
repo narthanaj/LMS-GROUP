@@ -575,7 +575,7 @@ a.tag {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.35);
 }
 .block-shadow {
-  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 20px 0 5px 0 rgba(0, 0, 0, 0.3);
 }
 .block-shadow-success {
   box-shadow: 0 0 25px 0 rgba(0, 128, 0, 0.7);
