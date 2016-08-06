@@ -15,8 +15,13 @@
   <script src="js/prettify/run_prettify.js"></script>
   <script src="js/ga.js"></script>
   <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <?php
+  session_start();
+   ?>
+  <title>LMS NSBM University</title>
 
 </head>
 <body>
-<div class="tile" data-role="tile">Calender</div>
+  <h1>Test</h1>
+
 </body>

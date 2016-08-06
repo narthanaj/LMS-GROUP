@@ -63,34 +63,53 @@
             });
         });
     </script>
+
 </head>
 
 
 <body >
     <div class="login-form padding20 block-shadow">
-        <form>
+        <form method="post" action="index.php?action=login">
             <img src="images/logo/logo.png" >
             <hr class="thin"/>
             <br />
             <div class="input-control text full-size" data-role="input">
                 <label for="user_login">Username:</label>
-                <input type="text" name="user_login" id="user_login">
+                <input type="text" name="urname" id="user_login">
                 <button class="button helper-button clear"><span class="mif-cross"></span></button>
             </div>
             <br />
             <br />
             <div class="input-control password full-size" data-role="input">
                 <label for="user_password">Password:</label>
-                <input type="password" name="user_password" id="user_password">
+                <input type="password" name="psswrd" id="user_password">
                 <button class="button helper-button reveal"><span class="mif-looks"></span></button>
             </div>
+            <?php
+            error_reporting(E_ALL & ~E_NOTICE); #Report all errors except E_NOTICE
+            session_start();
+            if(isset($_POST[login])){
+                require 'connect.php'; #database connection details
+                $username = $_POST['urname']; #assign username to php variable
+                $password = $_POST['psswrd']; #assign password to php variable
+                $result = mysqli_query($con,'SELECT * FROM logins WHERE username="'.$username.'" AND password="'.$password.'"') ; #SQL
+              if(mysqli_num_rows($result)==1){
+                $_SESSION['urname'] = $username;
+                header('location: home.php');
+              }
+              else {
+                echo "<b>Incorrect Username & Password</b>";
+              }
+              }
+             ?>
             <br />
             <br />
             <div class="form-actions">
-                <button type="submit" class="button primary">Login</button>
-                <button type="button" class="button link">Cancel</button>
-            </div>
+                <button type="submit" class="button primary" name="login">Login</button>
+                <button type="button" class="button link" name="cancel">Cancel</button>
+
         </form>
     </div>
+
 </body>
 </html>
