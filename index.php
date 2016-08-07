@@ -107,15 +107,9 @@
             <br />
             <br />
             <div class="form-actions">
-<<<<<<< HEAD:index.htm
                 <button type="submit" class="button primary">Login</button>
                 <button type="button" class="button link">Cancel</button>
             </div>
-=======
-                <button type="submit" class="button primary" name="login">Login</button>
-                <button type="button" class="button link" name="cancel">Cancel</button>
-
->>>>>>> origin/master:index.php
         </form>
     </div>
 
