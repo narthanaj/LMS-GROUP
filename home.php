@@ -120,30 +120,30 @@
                           </div>
                       </div>
                       <div class="step">
-                          <div class="step-content">
-                              <p class="text-small lowercase no-margin">purchase from store</p>
-                              <h1 class="no-margin-top">Choose payment type</h1>
+                        <div class="step-content">
+                            <p class="text-small lowercase no-margin">Course categories</p>
+                            <h1 class="no-margin-top">Faculty</h1>
 
-                              <label class="input-control radio block">
-                                  <input type="radio" name="r1" checked>
-                                  <span class="check"></span>
-                                  <span class="caption">Visa</span>
-                              </label>
+                            <label class="input-control radio block">
+                                <input type="radio" name="r1" checked>
+                                <span class="check"></span>
+                                <span class="caption">School of  Business</span>
+                            </label>
 
-                              <label class="input-control radio block">
-                                  <input type="radio" name="r1">
-                                  <span class="check"></span>
-                                  <span class="caption">Mastercard</span>
-                              </label>
+                            <label class="input-control radio block">
+                                <input type="radio" name="r1">
+                                <span class="check"></span>
+                                <span class="caption">School of Computing</span>
+                            </label>
 
-                              <label class="input-control radio block">
-                                  <input type="radio" name="r1">
-                                  <span class="check"></span>
-                                  <span class="caption">Paypal</span>
-                              </label>
+                            <label class="input-control radio block">
+                                <input type="radio" name="r1">
+                                <span class="check"></span>
+                                <span class="caption">School of Engineering</span>
+                            </label>
 
-                              <div class="text-small padding20 bg-grayLighter">
-                                  Select payment type and press next
+                            <div class="text-small padding20 bg-grayLighter">
+                                Select Course category and press next
                               </div>
 
                           </div>
