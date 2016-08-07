@@ -8,9 +8,7 @@
     <meta name="keywords" content="HTML, CSS, JS, JavaScript, framework, metro, front-end, frontend, web development">
     <meta name="author" content="Sergey Pimenov and Metro UI CSS contributors">
 
-
-    <link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/ >
-
+    <link rel='shortcut icon' type='image/x-icon' href='../favicon.ico' />
 
     <title>NSBM University Login</title>
 
@@ -103,13 +101,16 @@
                 echo "<b>Incorrect Username & Password</b>";
               }
               }
+              if (isset($_GET['logout'])) {
+                session_unregister('urname');#logout part
+              }
              ?>
             <br />
             <br />
             <div class="form-actions">
-                <button type="submit" class="button primary">Login</button>
-                <button type="button" class="button link">Cancel</button>
-            </div>
+                <button type="submit" class="button primary" name="login">Login</button>
+                <button type="button" class="button link" name="cancel">Cancel</button>
+
         </form>
     </div>
 
