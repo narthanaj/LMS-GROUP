@@ -34,7 +34,7 @@
     <ul class="h-menu block-shadow-impact">
         <a href="home.htm"><img src="images/logo/logo.png" alt="NSBM" width="250" height="150" /></a>
                 <li class="place-right ">
-          <a href="#" class="dropdown-toggle"  style=" margin-right:5px"><?php echo 'Logged as'.$_SESSION['urname'];?></a>
+          <a href="#" class="dropdown-toggle"  style=" margin-right:5px"><?php echo 'Logged as&nbsp;'.$_SESSION['urname'];?></a>
           <ul  class="d-menu" data-role="dropdown">
               <li><a href="#">My Profile</a></li>
               <li><a href="index.php?action=logout">Logout</a></li>
