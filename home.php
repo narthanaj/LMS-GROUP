@@ -31,6 +31,31 @@
          ?>
   </head>
 <body>
+<<<<<<< HEAD
+=======
+<div>
+
+    <ul class="h-menu block-shadow-impact">
+        <a href="http://localhost/LMS-GROUP/home.php"><img src="images/logo/logo.png" alt="NSBM" width="250" height="150" /></a>
+                <li class="place-right ">
+          <a href="#" class="dropdown-toggle"  style=" margin-right:5px"><?php echo 'Logged as&nbsp;'.$_SESSION['urname'];?></a>
+          <ul  class="d-menu" data-role="dropdown">
+              <li><a href="#">My Profile</a></li>
+              <li><a href="index.php?action=logout">Logout</a></li>
+          </ul>
+        </li>
+    </ul>
+</div>
+
+<div >
+    <div class="grid">
+        <div class="row cells3" >
+            <div class="cell ">
+                <ul class="v-menu block-shadow-impact min-size-required">
+                    <li><a href="#"><span class="mif-home icon"></span> Home</a></li>
+                    <li><a href="#"><span class="mif-user icon"></span> Profile</a></li>
+                    <li><a href="#" class="dropdown-toggle"><span class="mif-calendar icon"></span>Time table and Events</a>
+>>>>>>> origin/master
 
 <div class="container">
 
@@ -85,6 +110,7 @@
                                 </ul>
                             </li>
                         </ul>
+<<<<<<< HEAD
                       </li>
 
                       <li><a href="#"><span class="mif-image icon"></span> Photo</a></li>
@@ -121,6 +147,94 @@
                       </li>
                       <li><a href="#"><span class="mif-bubbles icon"></span>Messages</a></li>
                   </ul>
+=======
+                    </li>
+                    <li><a href="#"><span class="mif-bubbles icon"></span>Messages</a></li>
+                </ul>
+            </div>
+
+            <div class="cell">
+              <div>
+                  <div class="wizard2"
+                       data-role="wizard2"
+                       data-button-labels='{"help": "?", "prev": "<span class=\"mif-arrow-left\"></span>", "next": "<span class=\"mif-arrow-right\"></span>", "finish": "<span class=\"mif-checkmark\"></span>"}'>
+
+
+
+                      <div class="step">
+                        <div class="step-content">
+                            <p class="text-small lowercase no-margin">Course categories</p>
+                            <h1 class="no-margin-top">Faculty</h1>
+
+                            <label class="input-control radio block">
+                                <input type="radio" name="r1" checked>
+                                <span class="check"></span>
+                                <span class="caption">School of  Business</span>
+                            </label>
+
+                            <label class="input-control radio block">
+                                <input type="radio" name="r1">
+                                <span class="check"></span>
+                                <span class="caption">School of Computing</span>
+                            </label>
+
+                            <label class="input-control radio block">
+                                <input type="radio" name="r1">
+                                <span class="check"></span>
+                                <span class="caption">School of Engineering</span>
+                            </label>
+
+                            <div class="text-small padding10 bg-grayLighter">
+                                Select Course category and press next
+                              </div>
+
+                          </div>
+                      </div>
+                      <div class="step">
+                          <div class="step-content">
+                              <p class="text-small lowercase no-margin">Sub-categories</p>
+                              <h1 class="no-margin-top">Choose Year</h1>
+
+                              <label class="input-control radio block">
+                                  <input type="radio" name="r2" checked>
+                                  <span class="check"></span>
+                                  <span class="caption">Year 1</span>
+                              </label>
+
+                              <label class="input-control radio block">
+                                  <input type="radio" name="r2">
+                                  <span class="check"></span>
+                                  <span class="caption">Year 2</span>
+                              </label>
+
+                              <label class="input-control radio block">
+                                  <input type="radio" name="r2">
+                                  <span class="check"></span>
+                                  <span class="caption">Year 3</span>
+                              </label>
+
+                              <label class="input-control radio block">
+                                  <input type="radio" name="r2">
+                                  <span class="check"></span>
+                                  <span class="caption">Year 4</span>
+                              </label>
+
+                              <div class="text-small padding10 bg-grayLighter">
+                                  Select Year and press next
+                              </div>
+
+                          </div>
+                      </div>
+                      <div class="step">
+                          <div class="step-content">
+                              <p class="text-small lowercase no-margin">purchase from store</p>
+                              <h1 class="no-margin-top">Finish step</h1>
+
+                          </div>
+                      </div>
+
+                  </div>
+>>>>>>> origin/master
               </div>
 
 

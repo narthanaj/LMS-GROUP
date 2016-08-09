@@ -75,14 +75,14 @@
             <br />
             <div class="input-control text full-size" data-role="input">
                 <label for="user_login">Username:</label>
-                <input type="text" name="urname" id="user_login">
+                <input type="text" name="urname" id="user_login" placeholder="Username">
                 <button class="button helper-button clear"><span class="mif-cross"></span></button>
             </div>
             <br />
             <br />
             <div class="input-control password full-size" data-role="input">
                 <label for="user_password">Password:</label>
-                <input type="password" name="psswrd" id="user_password">
+                <input type="password" name="psswrd" id="user_password" placeholder="Password">
                 <button class="button helper-button reveal"><span class="mif-looks"></span></button>
             </div>
             <?php
