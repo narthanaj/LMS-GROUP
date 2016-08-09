@@ -32,7 +32,7 @@
 <div>
 
     <ul class="h-menu block-shadow-impact">
-        <a href="home.htm"><img src="images/logo/logo.png" alt="NSBM" width="250" height="150" /></a>
+        <a href="http://localhost/LMS-GROUP/home.php"><img src="images/logo/logo.png" alt="NSBM" width="250" height="150" /></a>
                 <li class="place-right ">
           <a href="#" class="dropdown-toggle"  style=" margin-right:5px"><?php echo 'Logged as&nbsp;'.$_SESSION['urname'];?></a>
           <ul  class="d-menu" data-role="dropdown">
@@ -97,7 +97,7 @@
                        data-button-labels='{"help": "?", "prev": "<span class=\"mif-arrow-left\"></span>", "next": "<span class=\"mif-arrow-right\"></span>", "finish": "<span class=\"mif-checkmark\"></span>"}'>
 
 
-                      
+
                       <div class="step">
                         <div class="step-content">
                             <p class="text-small lowercase no-margin">Course categories</p>
