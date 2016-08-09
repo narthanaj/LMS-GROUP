@@ -9,7 +9,7 @@
       <meta name="author" content="Sergey Pimenov and Metro UI CSS contributors">
 
       <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
-      <title>lms NSBM</title>
+      <title>LMS</title>
 
       <link href="css/metro.css" rel="stylesheet">
       <link href="css/metro-icons.css" rel="stylesheet">
@@ -102,91 +102,7 @@
   </nav>
 
   <article>
-    <div class="container">
-      <div>
-          <div class="wizard2"
-               data-role="wizard2"
-               data-button-labels='{  "prev": "<span class=\"mif-arrow-left\"></span>", "next": "<span class=\"mif-arrow-right\"></span>", "finish": "<span class=\"mif-checkmark\"></span>"}'>
-
-
-
-              <div class="step">
-                <div class="step-content">
-                    <p class="text-small lowercase no-margin">Course categories</p>
-                    <h1 class="no-margin-top">Faculty</h1>
-
-                    <label class="input-control radio block">
-                        <input type="radio" name="r1" checked>
-                        <span class="check"></span>
-                        <span class="caption">School of  Business</span>
-                    </label>
-
-                    <label class="input-control radio block">
-                        <input type="radio" name="r1">
-                        <span class="check"></span>
-                        <span class="caption">School of Computing</span>
-                    </label>
-
-                    <label class="input-control radio block">
-                        <input type="radio" name="r1">
-                        <span class="check"></span>
-                        <span class="caption">School of Engineering</span>
-                    </label>
-
-                    <div class="text-small padding10 bg-grayLighter">
-                        Select Course category and press next
-                      </div>
-
-                  </div>
-              </div>
-              <div class="step">
-                  <div class="step-content">
-                      <p class="text-small lowercase no-margin">Sub-categories</p>
-                      <h1 class="no-margin-top">Choose Year</h1>
-
-                      <label class="input-control radio block">
-                          <input type="radio" name="r2" checked>
-                          <span class="check"></span>
-                          <span class="caption">Year 1</span>
-                      </label>
-
-                      <label class="input-control radio block">
-                          <input type="radio" name="r2">
-                          <span class="check"></span>
-                          <span class="caption">Year 2</span>
-                      </label>
-
-                      <label class="input-control radio block">
-                          <input type="radio" name="r2">
-                          <span class="check"></span>
-                          <span class="caption">Year 3</span>
-                      </label>
-
-                      <label class="input-control radio block">
-                          <input type="radio" name="r2">
-                          <span class="check"></span>
-                          <span class="caption">Year 4</span>
-                      </label>
-
-                      <div class="text-small padding10 bg-grayLighter">
-                          Select Year and press next
-                      </div>
-
-                  </div>
-              </div>
-              <div class="step">
-                  <div class="step-content">
-                      <p class="text-small lowercase no-margin">purchase from store</p>
-                      <h1 class="no-margin-top">Finish step</h1>
-
-                  </div>
-              </div>
-
-          </div>
-      </div>
-    </div>
-
-
+    middle 
  </article>
 
  <footer>footer </footer>
