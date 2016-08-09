@@ -97,31 +97,7 @@
                        data-button-labels='{"help": "?", "prev": "<span class=\"mif-arrow-left\"></span>", "next": "<span class=\"mif-arrow-right\"></span>", "finish": "<span class=\"mif-checkmark\"></span>"}'>
 
 
-                      <div class="step">
-                          <div class="step-content">
-                              <p class="text-small lowercase no-margin">purchase from store</p>
-                              <h1 class="no-margin-top">Choose Game</h1>
-
-                              <div class="clear-float">
-                                  <div style="width: 100px; margin-right: 20px" class="place-left">
-                                      <img src="images/Battlefield_4_Icon.png" data-role="fitImage" data-format='square' data-type='bordered'>
-                                  </div>
-                                  <div class="place-left">
-                                      <h3 class="no-wrap"> Battle field 4</h3>
-                                      <h5>THE NEXT GENERATION OF BATTLEFIELD</h5>
-                                      <h2>Price: $ 9.99</h2>
-                                  </div>
-                              </div>
-
-                              <br />
-                              <div class="text-small padding20 bg-grayLighter no-phone">
-                                  Battlefield 4 features an intense and character-driven single player campaign, fused with the strongest elements of multiplayer. Pilot vehicles, take advantage of the dynamic destructible environments and don't let your squad down.
-                                  Watch the new single player trailer above for a glimpse of the drama and perils Tombstone Squad has to face, trying to find its way back home.
-                                  Boot Camp gives you a step-by-step introduction to the thrilling world of Battlefield 4. Learn the basics of the engaging single player campaign and prepare for the all-out war in multiplayer.
-                              </div>
-
-                          </div>
-                      </div>
+                      
                       <div class="step">
                         <div class="step-content">
                             <p class="text-small lowercase no-margin">Course categories</p>
