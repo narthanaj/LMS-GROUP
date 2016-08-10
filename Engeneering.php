@@ -60,7 +60,7 @@
       <li><a href="#"><span class="mif-image icon"></span> Photo</a></li>
       <li class="divider"></li>
       <li class="menu-title">Third Title</li>
-      
+
       <li><a href="#"><span class="mif-bubbles icon"></span> Messages</a></li>
   </ul>
 </div>
@@ -75,7 +75,29 @@
     middle
  </article>
 
- <footer>footer </footer>
+ <footer style="background-color: #EFEAE3 ; height: 100px;">
+     <div class="container">
+         <div class="padding5">
+             <div class="grid">
+
+                 <div class="row cells2">
+                     <div class="cell">
+                         <div class="row cells4">
+                             <div class="cell">
+                                 <img src="images/logo/logo.png" >
+                             </div>
+                             <div class="cell colspan3 padding20 no-padding-top no-padding-bottom">
+
+                                 <p class="text-secondary">
+                                   Copyright @ National School of Business Management No 309, <br>High Level Road, Colombo 05, Sri Lanka.
+<br>Telephone: +94(11) 567 2545|5673535 - <br>Email:info@nsbm.lk
+                                 </p>
+
+
+
+     </div>
+ </footer>
+
 
  </div>
 
