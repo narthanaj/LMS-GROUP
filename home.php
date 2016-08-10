@@ -26,7 +26,7 @@
       <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
       <?php
         session_start();
-         ?>
+         ?>s
   </head>
 
   <div class="container">
@@ -112,16 +112,16 @@
                     <h1 class="no-margin-top">Faculty</h1>
 
                     <label>
-                        <a href="" style="font-weight: bold; align-center;">School of Business</a>
+                        <a href="http://localhost/LMS-GROUP/buisness.php" style="font-weight: bold; align-center;">School of Business</a>
                     </label>
 <br>
 <br>
                     <label>
-                        <a href="" style="font-weight: bold; align-center;">School of Computing</a>
+                        <a href="http://localhost/LMS-GROUP/computing.php" style="font-weight: bold; align-center;">School of Computing</a>
                     </label>
                     <br>
                     <br>
-                      <a href ="" style="font-weight: bold; align-center;">  School of Engineering</a>
+                      <a href ="http://localhost/LMS-GROUP/Engeneering.php" style="font-weight: bold; align-center;">  School of Engineering</a>
                     </label>
               </div>
 

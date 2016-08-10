@@ -35,11 +35,11 @@
   <div>
 
       <ul class="h-menu block-shadow-impact">
-          <a href="home.php"><img src="images/logo/logo.png" alt="NSBM" width="250" height="150" /></a>
+          <a href="http://localhost/LMS-GROUP/home.php"><img src="images/logo/logo.png" alt="NSBM" width="250" height="150" /></a>
                   <li class="place-right ">
             <a href="#" class="dropdown-toggle"  style=" margin-right:5px"><?php echo 'Logged as&nbsp;'.$_SESSION['urname'];?></a>
             <ul  class="d-menu" data-role="dropdown">
-                <li><a href="#">My Profile</a></li>
+                <li><a href="http://localhost/LMS-GROUP/profile.php">My Profile</a></li>
                 <li><a href="index.php?action=logout">Logout</a></li>
             </ul>
           </li>
@@ -102,7 +102,7 @@
   </nav>
 
   <article>
-    middle 
+    middle
  </article>
 
  <footer>footer </footer>
