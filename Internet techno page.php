@@ -110,12 +110,12 @@
 
                       </tr>
                       <tr>
-                          <th class="sortable-column"><a href="G:\LMS-GROUP\modules\computing\year 1\HTML.pptx" download>HTML</a></th>
+                          <th class="sortable-column"><a href="\LMS-GROUP\modules\computing\year 1\HTML.pptx" download>HTML</a></th>
                             <th class="sortable-column"></th>
                       </tr>
 
                       <tr>
-                          <th class="sortable-column">Java Script</th>
+                          <th class="sortable-column"><a href="\LMS-GROUP\modules\computing\year 1\Introduction_to_JavaScript.doc" download>Java Script</a></th>
                       </tr>
 
 

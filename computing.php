@@ -115,7 +115,7 @@
                         </tr>
 
                         <tr>
-                            <th class="sortable-column">Internet Technology</th>
+                            <th class="sortable-column"><a href="http://localhost/LMS-GROUP/Internet%20techno%20page.php">Internet Technology</a></th>
                         </tr>
 
                         <tr>
