@@ -112,16 +112,16 @@
                     <h1 class="no-margin-top">Faculty</h1>
 
                     <label>
-                        <a href="" style="font-weight: bold; align-center;">School of Business</a>
+                        <a href="" style="font-weight: bold; align-center">School of Business</a>
                     </label>
 <br>
 <br>
                     <label>
-                        <a href="" style="font-weight: bold; align-center;">School of Computing</a>
+                        <a href="" style="font-weight: bold; align-center">School of Computing</a>
                     </label>
                     <br>
                     <br>
-                      <a href ="" style="font-weight: bold; align-center;">  School of Engineering</a>
+                      <a href ="engeneering.php" style="font-weight: bold; align-center;">  School of Engineering</a>
                     </label>
               </div>
 

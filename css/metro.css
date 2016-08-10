@@ -8988,7 +8988,7 @@ input[type="submit"].link:active {
   border-radius: inherit;
 }
 .calendar .calendar-header {
-  background-color: #59cde2;
+  ;
   color: #ffffff;
 }
 .calendar .calendar-header a {
@@ -9037,9 +9037,9 @@ input[type="submit"].link:active {
   display: block;
   text-align: center;
   color: #999999;
-  padding: .325rem;
+  
   background-color: #eeeeee;
-  border: 1px #bcd9e2 solid;
+  border: 0px #bcd9e2 solid;
 }
 .calendar .exclude {
   background-color: #ce352c;
