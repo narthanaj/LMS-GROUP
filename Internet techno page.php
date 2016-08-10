@@ -39,7 +39,7 @@
                   <li class="place-right ">
             <a href="#" class="dropdown-toggle"  style=" margin-right:5px"><?php echo 'Logged as&nbsp;'.$_SESSION['urname'];?></a>
             <ul  class="d-menu" data-role="dropdown">
-                <li><a href="#">My Profile</a></li>
+                <li><a href="http://localhost/LMS-GROUP/profile.php">My Profile</a></li>
                 <li><a href="index.php?action=logout">Logout</a></li>
             </ul>
           </li>
@@ -52,10 +52,10 @@
 <div>
   <ul class="v-menu block-shadow-impact min-size-required">
       <li class="menu-title">First Title</li>
-      <li><a href="#"><span class="mif-home icon"></span> Home</a></li>
+      <li><a href="http://localhost/LMS-GROUP/home.php"><span class="mif-home icon"></span> Home</a></li>
       <li class="divider"></li>
       <li class="menu-title">Second Title</li>
-      <li><a href="#"><span class="mif-user icon"></span> Profile</a></li>
+      <li><a href="http://localhost/LMS-GROUP/profile.php"><span class="mif-user icon"></span> Profile</a></li>
       <li><a href="#"><span class="mif-calendar icon"></span> Calendar</a></li>
       <li><a href="#"><span class="mif-image icon"></span> Photo</a></li>
       <li class="divider"></li>
