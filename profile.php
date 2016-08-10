@@ -9,7 +9,7 @@
       <meta name="author" content="Sergey Pimenov and Metro UI CSS contributors">
 
       <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
-      <title>Menu :: Metro UI CSS - The front-end framework for developing projects on the web in Windows Metro Style</title>
+      <title>LMS</title>
 
       <link href="css/metro.css" rel="stylesheet">
       <link href="css/metro-icons.css" rel="stylesheet">
@@ -27,6 +27,42 @@
       <?php
         session_start();
          ?>
+         <?php
+        $dbhost = 'localhost';
+        $dbuser = 'root';
+        $dbpass = '';
+
+        $conn = mysql_connect($dbhost, $dbuser, $dbpass);
+
+        if(! $conn ) {
+           die('Could not connect: ' . mysql_error());
+        }
+
+        $sql = 'SELECT firstname, lastname, gender, address, nic, email, pno, degree FROM student_details WHERE username="'.$_SESSION['urname'].'"';
+        mysql_select_db('lms');
+        $retval = mysql_query( $sql, $conn );
+
+        if(! $retval ) {
+           die('Could not get data: ' . mysql_error());
+        }
+
+       while($row = mysql_fetch_array($retval, MYSQL_ASSOC)) {
+         $fname=$row['firstname'];
+         $lname=$row['lastname'];
+         $gend=$row['gender'];
+         $add=$row['address'];
+         $ni=$row['nic'];
+         $ema=$row['email'];
+         $pn=$row['pno'];
+         $fac=$row['degree'];
+
+        }
+
+
+        mysql_close($conn);
+     ?>
+
+
   </head>
 
   <div class="container">
@@ -37,9 +73,9 @@
       <ul class="h-menu block-shadow-impact">
           <a href="http://localhost/LMS-GROUP/home.php"><img src="images/logo/logo.png" alt="NSBM" width="250" height="150" /></a>
                   <li class="place-right ">
-            <a href="#" class="dropdown-toggle"  style=" margin-right:5px"><?php echo 'Logged as&nbsp;'.$_SESSION['urname'];?></a>
+            <a href="http://localhost/LMS-GROUP/profile.php" class="dropdown-toggle"  style=" margin-right:5px"><?php echo 'Logged as&nbsp;'.$_SESSION['urname'];?></a>
             <ul  class="d-menu" data-role="dropdown">
-                <li><a href="http://localhost/LMS-GROUP/profile.php">My Profile</a></li>
+                <li><a href="#">My Profile</a></li>
                 <li><a href="index.php?action=logout">Logout</a></li>
             </ul>
           </li>
@@ -102,89 +138,19 @@
   </nav>
 
   <article>
-    <div class="container">
-      <div>
-          <div class="wizard2"
-               data-role="wizard2"
-               data-button-labels='{  "prev": "<span class=\"mif-arrow-left\"></span>", "next": "<span class=\"mif-arrow-right\"></span>", "finish": "<span class=\"mif-checkmark\"></span>"}'>
-
-
-
-              <div class="step">
-                <div class="step-content">
-                    <p class="text-small lowercase no-margin">Course categories</p>
-                    <h1 class="no-margin-top">Faculty</h1>
-
-                    <label class="input-control radio block">
-                        <input type="radio" name="r1" checked>
-                        <span class="check"></span>
-                        <span class="caption">School of  Business</span>
-                    </label>
-
-                    <label class="input-control radio block">
-                        <input type="radio" name="r1">
-                        <span class="check"></span>
-                        <span class="caption">School of Computing</span>
-                    </label>
-
-                    <label class="input-control radio block">
-                        <input type="radio" name="r1">
-                        <span class="check"></span>
-                        <span class="caption">School of Engineering</span>
-                    </label>
-
-                    <div class="text-small padding10 bg-grayLighter">
-                        Select Course category and press next
-                      </div>
-
-                  </div>
-              </div>
-              <div class="step">
-                  <div class="step-content">
-                      <p class="text-small lowercase no-margin">Sub-categories</p>
-                      <h1 class="no-margin-top">Choose Year</h1>
-
-                      <label class="input-control radio block">
-                          <input type="radio" name="r2" checked>
-                          <span class="check"></span>
-                          <span class="caption">Year 1</span>
-                      </label>
-
-                      <label class="input-control radio block">
-                          <input type="radio" name="r2">
-                          <span class="check"></span>
-                          <span class="caption">Year 2</span>
-                      </label>
-
-                      <label class="input-control radio block">
-                          <input type="radio" name="r2">
-                          <span class="check"></span>
-                          <span class="caption">Year 3</span>
-                      </label>
-
-                      <label class="input-control radio block">
-                          <input type="radio" name="r2">
-                          <span class="check"></span>
-                          <span class="caption">Year 4</span>
-                      </label>
-
-                      <div class="text-small padding10 bg-grayLighter">
-                          Select Year and press next
-                      </div>
-
-                  </div>
-              </div>
-              <div class="step">
-                  <div class="step-content">
-                      <p class="text-small lowercase no-margin">purchase from store</p>
-                      <h1 class="no-margin-top">Finish step</h1>
-
-                  </div>
-              </div>
-
-          </div>
-      </div>
-    </div>
+    <form id="test">
+            <table>
+            <td>First Name:</td><td><div class="input-control text"><input type="text" readonly value="<?=$fname?>"></div></td><tr>
+            <td>Last Name:</td><td><div class="input-control text"><input type="text" readonly value="<?=$lname?>"></div></td><tr>
+            <td>Gender:</td><td><div class="input-control text"><input type="text" readonly value="<?=$gend?>"></div></td><tr>
+            <td>Address</td><td><div class="input-control text"><input type="text" value="<?=$add?>"></div></td><tr>
+            <td>NIC:</td><td><div class="input-control text"><input type="text" readonly value="<?=$ni?>"></div></td><tr>
+            <td>E-mail:</td><td><div class="input-control text"><input type="text" value="<?=$ema?>"></div></td><tr>
+            <td>Phone Number:</td><td><div class="input-control text"><input type="text" value="<?=$pn?>"></div></td><tr>
+            <td>Faculty:</td><td><div class="input-control text"><input type="text" readonly value="<?=$fac?>"></div></td><tr>
+            </table>
+     </form>
+    </table>
 
 
  </article>
