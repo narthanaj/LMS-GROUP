@@ -35,7 +35,7 @@
   <div>
 
       <ul class="h-menu block-shadow-impact">
-          <a href="home.php"><img src="images/logo/logo.png" alt="NSBM" width="250" height="150" /></a>
+          <a href="http://localhost/LMS-GROUP/home.php"><img src="images/logo/logo.png" alt="NSBM" width="250" height="150" /></a>
                   <li class="place-right ">
             <a href="#" class="dropdown-toggle"  style=" margin-right:5px"><?php echo 'Logged as&nbsp;'.$_SESSION['urname'];?></a>
             <ul  class="d-menu" data-role="dropdown">
@@ -52,10 +52,10 @@
 <div>
   <ul class="v-menu block-shadow-impact min-size-required">
       <li class="menu-title">First Title</li>
-      <li><a href="#"><span class="mif-home icon"></span> Home</a></li>
+      <li><a href="http://localhost/LMS-GROUP/Engeneering.php"><span class="mif-home icon"></span> Home</a></li>
       <li class="divider"></li>
       <li class="menu-title">Second Title</li>
-      <li><a href="#"><span class="mif-user icon"></span> Profile</a></li>
+      <li><a href="http://localhost/LMS-GROUP/profile.php"><span class="mif-user icon"></span> Profile</a></li>
       <li><a href="#"><span class="mif-calendar icon"></span> Calendar</a></li>
       <li><a href="#"><span class="mif-image icon"></span> Photo</a></li>
       <li class="divider"></li>
@@ -112,16 +112,16 @@
                     <h1 class="no-margin-top">Faculty</h1>
 
                     <label>
-                        <a href="" style="font-weight: bold; align-center">School of Business</a>
+                        <a href="http://localhost/LMS-GROUP/buisness.php" style="font-weight: bold; align-center">School of Business</a>
                     </label>
 <br>
 <br>
                     <label>
-                        <a href="" style="font-weight: bold; align-center">School of Computing</a>
+                        <a href="http://localhost/LMS-GROUP/computing.php" style="font-weight: bold; align-center">School of Computing</a>
                     </label>
                     <br>
                     <br>
-                      <a href ="" style="font-weight: bold; align-center;">  School of Engineering</a>
+                      <a href ="http://localhost/LMS-GROUP/Engeneering.php" style="font-weight: bold; align-center;">  School of Engineering</a>
                     </label>
               </div>
 
