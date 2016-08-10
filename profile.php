@@ -27,6 +27,42 @@
       <?php
         session_start();
          ?>
+         <?php
+        $dbhost = 'localhost';
+        $dbuser = 'root';
+        $dbpass = '';
+
+        $conn = mysql_connect($dbhost, $dbuser, $dbpass);
+
+        if(! $conn ) {
+           die('Could not connect: ' . mysql_error());
+        }
+
+        $sql = 'SELECT firstname, lastname, gender, address, nic, email, pno, degree FROM student_details WHERE username="'.$_SESSION['urname'].'"';
+        mysql_select_db('lms');
+        $retval = mysql_query( $sql, $conn );
+
+        if(! $retval ) {
+           die('Could not get data: ' . mysql_error());
+        }
+
+       while($row = mysql_fetch_array($retval, MYSQL_ASSOC)) {
+         $fname=$row['firstname'];
+         $lname=$row['lastname'];
+         $gend=$row['gender'];
+         $add=$row['address'];
+         $ni=$row['nic'];
+         $ema=$row['email'];
+         $pn=$row['pno'];
+         $fac=$row['degree'];
+
+        }
+
+
+        mysql_close($conn);
+     ?>
+
+
   </head>
 
   <div class="container">
@@ -37,9 +73,9 @@
       <ul class="h-menu block-shadow-impact">
           <a href="http://localhost/LMS-GROUP/home.php"><img src="images/logo/logo.png" alt="NSBM" width="250" height="150" /></a>
                   <li class="place-right ">
-            <a href="#" class="dropdown-toggle"  style=" margin-right:5px"><?php echo 'Logged as&nbsp;'.$_SESSION['urname'];?></a>
+            <a href="http://localhost/LMS-GROUP/profile.php" class="dropdown-toggle"  style=" margin-right:5px"><?php echo 'Logged as&nbsp;'.$_SESSION['urname'];?></a>
             <ul  class="d-menu" data-role="dropdown">
-                <li><a href="http://localhost/LMS-GROUP/profile.php">My Profile</a></li>
+                <li><a href="#">My Profile</a></li>
                 <li><a href="index.php?action=logout">Logout</a></li>
             </ul>
           </li>
@@ -52,10 +88,10 @@
 <div>
   <ul class="v-menu block-shadow-impact min-size-required">
       <li class="menu-title">First Title</li>
-      <li><a href="#"><span class="mif-home icon"></span> Home</a></li>
+      <li><a href="http://localhost/LMS-GROUP/home.php"><span class="mif-home icon"></span> Home</a></li>
       <li class="divider"></li>
       <li class="menu-title">Second Title</li>
-      <li><a href="#"><span class="mif-user icon"></span> Profile</a></li>
+      <li><a href="http://localhost/LMS-GROUP/profile.php"><span class="mif-user icon"></span> Profile</a></li>
       <li><a href="#"><span class="mif-calendar icon"></span> Calendar</a></li>
       <li><a href="#"><span class="mif-image icon"></span> Photo</a></li>
       <li class="divider"></li>
@@ -102,7 +138,21 @@
   </nav>
 
   <article>
-    middle
+    <form id="test">
+            <table>
+            <td>First Name:</td><td><div class="input-control text"><input type="text" readonly value="<?=$fname?>"></div></td><tr>
+            <td>Last Name:</td><td><div class="input-control text"><input type="text" readonly value="<?=$lname?>"></div></td><tr>
+            <td>Gender:</td><td><div class="input-control text"><input type="text" readonly value="<?=$gend?>"></div></td><tr>
+            <td>Address</td><td><div class="input-control text"><input type="text" value="<?=$add?>"></div></td><tr>
+            <td>NIC:</td><td><div class="input-control text"><input type="text" readonly value="<?=$ni?>"></div></td><tr>
+            <td>E-mail:</td><td><div class="input-control text"><input type="text" value="<?=$ema?>"></div></td><tr>
+            <td>Phone Number:</td><td><div class="input-control text"><input type="text" value="<?=$pn?>"></div></td><tr>
+            <td>Faculty:</td><td><div class="input-control text"><input type="text" readonly value="<?=$fac?>"></div></td><tr>
+            </table>
+     </form>
+    </table>
+
+
  </article>
 
  <footer>footer </footer>
