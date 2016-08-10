@@ -121,7 +121,7 @@
                     </label>
                     <br>
                     <br>
-                      <a href ="engeneering.php" style="font-weight: bold; align-center;">  School of Engineering</a>
+                      <a href ="" style="font-weight: bold; align-center;">  School of Engineering</a>
                     </label>
               </div>
 
