@@ -60,37 +60,7 @@
       <li><a href="#"><span class="mif-image icon"></span> Photo</a></li>
       <li class="divider"></li>
       <li class="menu-title">Third Title</li>
-      <li>
-          <a href="#" class="dropdown-toggle"><span class="mif-my-location icon"></span> Location</a>
-          <ul class="d-menu" data-role="dropdown">
-              <li class="menu-title">Title for dropdown</li>
-              <li><a href="#">Коллеги</a></li>
-              <li><a href="#">Интересно</a></li>
-              <li>
-                  <div class="item-block text-center">
-                      <button class="square-button"><img class="icon" src="images/round.png"></button>
-                      <button class="square-button"><img class="icon" src="images/location.png"></button>
-                      <button class="square-button"><img class="icon" src="images/group.png"></button>
-                  </div>
-              </li>
-              <li>
-                  <a href="#" class="dropdown-toggle">Еще...</a>
-                  <ul  class="d-menu" data-role="dropdown">
-                      <li><a href="#">Коллеги</a></li>
-                      <li><a href="#">Интересно</a></li>
-                      <li>
-                          <div class="item-block text-center bg-grayLighter">
-                              <button class="round-button"><img class="icon" src="images/round.png"></button>
-                              <button class="round-button"><img class="icon" src="images/location.png"></button>
-                              <button class="round-button"><img class="icon" src="images/group.png"></button>
-                              <button class="round-button"><img class="icon" src="images/power.png"></button>
-                          </div>
-                      </li>
-                      <li class="divider"></li>
-                  </ul>
-              </li>
-          </ul>
-      </li>
+
       <li><a href="#"><span class="mif-bubbles icon"></span> Community</a></li>
   </ul>
 </div>
@@ -108,7 +78,7 @@
 
               <div class="step">
                 <div class="step-content">
-                    <p class="text-small lowercase no-margin">Course categories</p>
+                  
                     <h1 class="no-margin-top">Faculty</h1>
 
                     <label>
